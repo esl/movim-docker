@@ -2,7 +2,7 @@
 ============
 
   All needed scripts to have [movim](https://github.com/movim/movim) application run in docker container.
-  It builds one image with [apache2](https://httpd.apache.org/) server configured and the second one with the movim deployed in /var/www/movim directory. 
+  It builds one image with [apache2](https://httpd.apache.org/) server configured and the second one with the movim deployed in `/var/www/movim` directory. 
 
 Dependencies
 -----------------
@@ -13,8 +13,8 @@ Dependencies
 Configuration
 -----------------
 
-In case to successfully run movim app in the container you should configure your datatabase. Do it in the file movim-app/db.inc.php. It's equivalent to movim/config/db.inc.php file so the file will be just replaced.
-You have also to configure your public url for your application. Change the line below in movim-app/start_server.sh file:
+In case to successfully run movim app in the container you should configure your datatabase. Do it in the file `movim-app/db.inc.php`. It's equivalent to `movim/config/db.inc.php` file so the file will be just replaced.
+You have also to configure your public url for your application. Change the line below in `movim-app/start_server.sh` file:
 ```
 IP_MOVIM="mymovim.com"
 ```
