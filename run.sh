@@ -5,7 +5,7 @@ docker rmi -f $IMAGE
 echo
 
 echo "building new image"
-cd apache
+cd apache2
 source build-apache.sh
 cd ..
 cd movim-app
